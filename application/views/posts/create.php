@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('posts/create'); ?>
+<?php echo form_open_multipart('posts/create'); ?>
   <div class="form-group">
     <label>Title</label>
     <input type="text" class="form-control" name="title" placeholder="Add Text">
@@ -20,14 +20,8 @@
       </select>
   </div>
   <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
+    <label for="InputFile">Upload Image</label><br>
+    <input type="file" name="userfile" size="20">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
